@@ -14,7 +14,7 @@
           <Property Name="LogDate" Type="datetime" Nullable="false" />
           <Property Name="Indx" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="Address" Type="varbinary" MaxLength="150" />
+          <Property Name="Address" Type="varchar" MaxLength="150" />
           <Property Name="PhoneNumber1" Type="varchar" MaxLength="15" Nullable="false" />
           <Property Name="PhoneNumber2" Type="varchar" MaxLength="15" />
         </EntityType>
@@ -88,25 +88,12 @@
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="dbCentroMedico" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="dbCentroMedicoContainer" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Clinicas" EntityType="dbCentroMedico.Clinica" />
           <EntitySet Name="Consultorios" EntityType="dbCentroMedico.Consultorio" />
           <EntitySet Name="Doctores" EntityType="dbCentroMedico.Doctore" />
           <EntitySet Name="Pacientes" EntityType="dbCentroMedico.Paciente" />
           <EntitySet Name="SegurosMedicos" EntityType="dbCentroMedico.SegurosMedico" />
+          <EntitySet Name="Clinicas" EntityType="dbCentroMedico.Clinica" />
         </EntityContainer>
-        <EntityType Name="Clinica">
-          <Key>
-            <PropertyRef Name="GID" />
-          </Key>
-          <Property Name="GID" Type="Guid" Nullable="false" />
-          <Property Name="IsActive" Type="Boolean" Nullable="false" />
-          <Property Name="LogDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="Indx" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="Address" Type="Binary" MaxLength="150" FixedLength="false" />
-          <Property Name="PhoneNumber1" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
-          <Property Name="PhoneNumber2" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-        </EntityType>
         <EntityType Name="Consultorio">
           <Key>
             <PropertyRef Name="GID" />
@@ -165,6 +152,19 @@
           <Property Name="Type" Type="String" Nullable="false" MaxLength="35" FixedLength="false" Unicode="false" />
           <Property Name="InsuranceCompany" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="Clinica">
+          <Key>
+            <PropertyRef Name="GID" />
+          </Key>
+          <Property Name="GID" Type="Guid" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="LogDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Indx" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber1" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber2" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -173,20 +173,6 @@
         <Alias Key="Model" Value="dbCentroMedico" />
         <Alias Key="Target" Value="dbCentroMedico.Store" />
         <EntityContainerMapping CdmEntityContainer="dbCentroMedicoContainer" StorageEntityContainer="dbCentroMedicoStoreContainer">
-          <EntitySetMapping Name="Clinicas">
-            <EntityTypeMapping TypeName="dbCentroMedico.Clinica">
-              <MappingFragment StoreEntitySet="Clinicas">
-                <ScalarProperty Name="PhoneNumber2" ColumnName="PhoneNumber2" />
-                <ScalarProperty Name="PhoneNumber1" ColumnName="PhoneNumber1" />
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Indx" ColumnName="Indx" />
-                <ScalarProperty Name="LogDate" ColumnName="LogDate" />
-                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-                <ScalarProperty Name="GID" ColumnName="GID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Consultorios">
             <EntityTypeMapping TypeName="dbCentroMedico.Consultorio">
               <MappingFragment StoreEntitySet="Consultorios">
@@ -241,6 +227,20 @@
                 <ScalarProperty Name="InsuranceCompany" ColumnName="InsuranceCompany" />
                 <ScalarProperty Name="Type" ColumnName="Type" />
                 <ScalarProperty Name="Decription" ColumnName="Decription" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Indx" ColumnName="Indx" />
+                <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="GID" ColumnName="GID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clinicas">
+            <EntityTypeMapping TypeName="dbCentroMedico.Clinica">
+              <MappingFragment StoreEntitySet="Clinicas">
+                <ScalarProperty Name="PhoneNumber2" ColumnName="PhoneNumber2" />
+                <ScalarProperty Name="PhoneNumber1" ColumnName="PhoneNumber1" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Indx" ColumnName="Indx" />
                 <ScalarProperty Name="LogDate" ColumnName="LogDate" />

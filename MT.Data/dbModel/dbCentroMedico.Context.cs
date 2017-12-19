@@ -25,10 +25,10 @@ namespace MT.Data.dbModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Clinica> Clinicas { get; set; }
         public virtual DbSet<Consultorio> Consultorios { get; set; }
         public virtual DbSet<Doctore> Doctores { get; set; }
         public virtual DbSet<Paciente> Pacientes { get; set; }
         public virtual DbSet<SegurosMedico> SegurosMedicos { get; set; }
+        public virtual DbSet<Clinica> Clinicas { get; set; }
     }
 }

@@ -9,7 +9,7 @@
     <Property Name="LogDate" Type="datetime" Nullable="false" />
     <Property Name="Indx" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="Address" Type="varbinary" MaxLength="150" />
+    <Property Name="Address" Type="varchar" MaxLength="150" />
     <Property Name="PhoneNumber1" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="PhoneNumber2" Type="varchar" MaxLength="15" />
   </EntityType>

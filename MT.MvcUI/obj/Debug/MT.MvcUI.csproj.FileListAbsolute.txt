@@ -24,3 +24,8 @@ C:\SourceCode\MagicTest\MT.MvcUI\bin\MT.Entities.dll
 C:\SourceCode\MagicTest\MT.MvcUI\bin\MT.Services.dll
 C:\SourceCode\MagicTest\MT.MvcUI\bin\MT.Entities.pdb
 C:\SourceCode\MagicTest\MT.MvcUI\bin\MT.Services.pdb
+C:\SourceCode\MagicTest\MT.MvcUI\bin\MT.Data.dll
+C:\SourceCode\MagicTest\MT.MvcUI\bin\EntityFramework.dll
+C:\SourceCode\MagicTest\MT.MvcUI\bin\MT.Data.pdb
+C:\SourceCode\MagicTest\MT.MvcUI\bin\MT.Data.dll.config
+C:\SourceCode\MagicTest\MT.MvcUI\bin\EntityFramework.xml

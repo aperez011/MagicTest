@@ -3,20 +3,6 @@
   <Alias Key="Model" Value="dbCentroMedico" />
   <Alias Key="Target" Value="dbCentroMedico.Store" />
   <EntityContainerMapping CdmEntityContainer="dbCentroMedicoContainer" StorageEntityContainer="dbCentroMedicoStoreContainer">
-    <EntitySetMapping Name="Clinicas">
-      <EntityTypeMapping TypeName="dbCentroMedico.Clinica">
-        <MappingFragment StoreEntitySet="Clinicas">
-          <ScalarProperty Name="PhoneNumber2" ColumnName="PhoneNumber2" />
-          <ScalarProperty Name="PhoneNumber1" ColumnName="PhoneNumber1" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Indx" ColumnName="Indx" />
-          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
-          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
-          <ScalarProperty Name="GID" ColumnName="GID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Consultorios">
       <EntityTypeMapping TypeName="dbCentroMedico.Consultorio">
         <MappingFragment StoreEntitySet="Consultorios">
@@ -71,6 +57,20 @@
           <ScalarProperty Name="InsuranceCompany" ColumnName="InsuranceCompany" />
           <ScalarProperty Name="Type" ColumnName="Type" />
           <ScalarProperty Name="Decription" ColumnName="Decription" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Indx" ColumnName="Indx" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clinicas">
+      <EntityTypeMapping TypeName="dbCentroMedico.Clinica">
+        <MappingFragment StoreEntitySet="Clinicas">
+          <ScalarProperty Name="PhoneNumber2" ColumnName="PhoneNumber2" />
+          <ScalarProperty Name="PhoneNumber1" ColumnName="PhoneNumber1" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Indx" ColumnName="Indx" />
           <ScalarProperty Name="LogDate" ColumnName="LogDate" />
