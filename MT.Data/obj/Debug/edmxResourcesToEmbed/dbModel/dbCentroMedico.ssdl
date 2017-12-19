@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbCentroMedico.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clinicas">
+    <Key>
+      <PropertyRef Name="GID" />
+    </Key>
+    <Property Name="GID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LogDate" Type="datetime" Nullable="false" />
+    <Property Name="Indx" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Address" Type="varbinary" MaxLength="150" />
+    <Property Name="PhoneNumber1" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="PhoneNumber2" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Consultorios">
+    <Key>
+      <PropertyRef Name="GID" />
+    </Key>
+    <Property Name="GID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LogDate" Type="datetime" Nullable="false" />
+    <Property Name="Indx" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClinicaID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Number" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="FloorNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Doctores">
+    <Key>
+      <PropertyRef Name="GID" />
+    </Key>
+    <Property Name="GID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LogDate" Type="datetime" Nullable="false" />
+    <Property Name="Indx" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClinicaID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="ContactNumber" Type="varchar" MaxLength="15" />
+    <Property Name="Address" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pacientes">
+    <Key>
+      <PropertyRef Name="GID" />
+    </Key>
+    <Property Name="GID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LogDate" Type="datetime" Nullable="false" />
+    <Property Name="Indx" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="Identification" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="ContactNumber" Type="varchar" MaxLength="15" />
+    <Property Name="DoB" Type="date" />
+    <Property Name="Email" Type="varchar" MaxLength="35" />
+    <Property Name="Sexo" Type="varchar" MaxLength="10" />
+    <Property Name="Edad" Type="int" Nullable="false" />
+    <Property Name="InsuranceID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SegurosMedicos">
+    <Key>
+      <PropertyRef Name="GID" />
+    </Key>
+    <Property Name="GID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LogDate" Type="datetime" Nullable="false" />
+    <Property Name="Indx" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="Decription" Type="varchar" MaxLength="250" />
+    <Property Name="Type" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="InsuranceCompany" Type="varchar" MaxLength="70" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="dbCentroMedicoStoreContainer">
+    <EntitySet Name="Clinicas" EntityType="Self.Clinicas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Consultorios" EntityType="Self.Consultorios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Doctores" EntityType="Self.Doctores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pacientes" EntityType="Self.Pacientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SegurosMedicos" EntityType="Self.SegurosMedicos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

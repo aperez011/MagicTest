@@ -1,0 +1,6 @@
+C:\SourceCode\MagicTest\MT.Entities\bin\Debug\MT.Entities.dll
+C:\SourceCode\MagicTest\MT.Entities\bin\Debug\MT.Entities.pdb
+C:\SourceCode\MagicTest\MT.Entities\obj\Debug\MT.Entities.csprojResolveAssemblyReference.cache
+C:\SourceCode\MagicTest\MT.Entities\obj\Debug\MT.Entities.csproj.CoreCompileInputs.cache
+C:\SourceCode\MagicTest\MT.Entities\obj\Debug\MT.Entities.dll
+C:\SourceCode\MagicTest\MT.Entities\obj\Debug\MT.Entities.pdb

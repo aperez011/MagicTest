@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="dbCentroMedico" />
+  <Alias Key="Target" Value="dbCentroMedico.Store" />
+  <EntityContainerMapping CdmEntityContainer="dbCentroMedicoContainer" StorageEntityContainer="dbCentroMedicoStoreContainer">
+    <EntitySetMapping Name="Clinicas">
+      <EntityTypeMapping TypeName="dbCentroMedico.Clinica">
+        <MappingFragment StoreEntitySet="Clinicas">
+          <ScalarProperty Name="PhoneNumber2" ColumnName="PhoneNumber2" />
+          <ScalarProperty Name="PhoneNumber1" ColumnName="PhoneNumber1" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Indx" ColumnName="Indx" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Consultorios">
+      <EntityTypeMapping TypeName="dbCentroMedico.Consultorio">
+        <MappingFragment StoreEntitySet="Consultorios">
+          <ScalarProperty Name="FloorNumber" ColumnName="FloorNumber" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ClinicaID" ColumnName="ClinicaID" />
+          <ScalarProperty Name="Indx" ColumnName="Indx" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctores">
+      <EntityTypeMapping TypeName="dbCentroMedico.Doctore">
+        <MappingFragment StoreEntitySet="Doctores">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ClinicaID" ColumnName="ClinicaID" />
+          <ScalarProperty Name="Indx" ColumnName="Indx" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pacientes">
+      <EntityTypeMapping TypeName="dbCentroMedico.Paciente">
+        <MappingFragment StoreEntitySet="Pacientes">
+          <ScalarProperty Name="InsuranceID" ColumnName="InsuranceID" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DoB" ColumnName="DoB" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Identification" ColumnName="Identification" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Indx" ColumnName="Indx" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SegurosMedicos">
+      <EntityTypeMapping TypeName="dbCentroMedico.SegurosMedico">
+        <MappingFragment StoreEntitySet="SegurosMedicos">
+          <ScalarProperty Name="InsuranceCompany" ColumnName="InsuranceCompany" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Decription" ColumnName="Decription" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Indx" ColumnName="Indx" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="GID" ColumnName="GID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

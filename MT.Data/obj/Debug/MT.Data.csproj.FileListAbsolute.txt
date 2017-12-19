@@ -1,0 +1,11 @@
+C:\SourceCode\MagicTest\MT.Data\bin\Debug\MT.Data.dll.config
+C:\SourceCode\MagicTest\MT.Data\bin\Debug\MT.Data.dll
+C:\SourceCode\MagicTest\MT.Data\bin\Debug\MT.Data.pdb
+C:\SourceCode\MagicTest\MT.Data\bin\Debug\EntityFramework.dll
+C:\SourceCode\MagicTest\MT.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\SourceCode\MagicTest\MT.Data\bin\Debug\EntityFramework.xml
+C:\SourceCode\MagicTest\MT.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\SourceCode\MagicTest\MT.Data\obj\Debug\MT.Data.csprojResolveAssemblyReference.cache
+C:\SourceCode\MagicTest\MT.Data\obj\Debug\MT.Data.csproj.CoreCompileInputs.cache
+C:\SourceCode\MagicTest\MT.Data\obj\Debug\MT.Data.dll
+C:\SourceCode\MagicTest\MT.Data\obj\Debug\MT.Data.pdb
