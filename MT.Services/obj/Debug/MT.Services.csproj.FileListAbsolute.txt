@@ -1,0 +1,13 @@
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\MT.Services.dll
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\MT.Services.pdb
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\MT.Data.dll
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\MT.Entities.dll
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\EntityFramework.dll
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\MT.Data.pdb
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\MT.Data.dll.config
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\MT.Entities.pdb
+C:\SourceCode\MagicTest\MT.Services\bin\Debug\EntityFramework.xml
+C:\SourceCode\MagicTest\MT.Services\obj\Debug\MT.Services.csprojResolveAssemblyReference.cache
+C:\SourceCode\MagicTest\MT.Services\obj\Debug\MT.Services.csproj.CoreCompileInputs.cache
+C:\SourceCode\MagicTest\MT.Services\obj\Debug\MT.Services.dll
+C:\SourceCode\MagicTest\MT.Services\obj\Debug\MT.Services.pdb
